@@ -1,0 +1,6 @@
+// this is the current docker run command I am using:
+docker run --rm --name <containerName> <imageName> \ <githubRepoURL> \ <SHACommit> \ <PathToModule>
+
+
+// this is the docker run command that we are working towards using:
+docker run -t --rm -v ${SCRIPT_DIR}:/Scratch ${image} /bin/bash -x /Scratch/run_experiment.sh ${slug} ${rounds} ${timeout} "${script}"
