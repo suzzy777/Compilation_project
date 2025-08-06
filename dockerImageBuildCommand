@@ -1,0 +1,2 @@
+// go to the directory with Dockerfile and scripts then run:
+docker build -t <nameImage> .
