@@ -1,0 +1,319 @@
+===== Step 1 + 2 + 3 =====
+Trying Java version: openjdk version "1.8.0_342"
+testing Step 1
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] spring-boot-cloud                                                  [pom]
+[INFO] registry                                                           [jar]
+[INFO] 
+[INFO] --------------------< cn.zhangxd:spring-boot-cloud >--------------------
+[INFO] Building spring-boot-cloud 1.0-SNAPSHOT                            [1/2]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ spring-boot-cloud ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-boot-cloud ---
+[INFO] Installing /workspace/target-project/pom.xml to /root/.m2/repository/cn/zhangxd/spring-boot-cloud/1.0-SNAPSHOT/spring-boot-cloud-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------------------< cn.zhangxd:registry >-------------------------
+[INFO] Building registry 1.0-SNAPSHOT                                     [2/2]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ registry ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ registry ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ registry ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /workspace/target-project/registry/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ registry ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /workspace/target-project/registry/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ registry ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /workspace/target-project/registry/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ registry ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ registry ---
+[INFO] Building jar: /workspace/target-project/registry/target/registry.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.5.6.RELEASE:repackage (default) @ registry ---
+[INFO] 
+[INFO] --- docker-maven-plugin:1.0.0:build (default) @ registry ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /workspace/target-project/registry/target/registry.jar -> /workspace/target-project/registry/target/docker/registry.jar
+[INFO] Copying /workspace/target-project/registry/src/test/java/cn/zhangxd/registry/ApplicationTests.java -> /workspace/target-project/registry/target/docker/src/test/java/cn/zhangxd/registry/ApplicationTests.java
+[INFO] Copying /workspace/target-project/registry/src/main/java/cn/zhangxd/registry/RegistryApplication.java -> /workspace/target-project/registry/target/docker/src/main/java/cn/zhangxd/registry/RegistryApplication.java
+[INFO] Copying /workspace/target-project/registry/src/main/resources/application.yml -> /workspace/target-project/registry/target/docker/src/main/resources/application.yml
+[INFO] Copying /workspace/target-project/registry/src/main/resources/bootstrap.yml -> /workspace/target-project/registry/target/docker/src/main/resources/bootstrap.yml
+[INFO] Copying /workspace/target-project/registry/target/maven-archiver/pom.properties -> /workspace/target-project/registry/target/docker/target/maven-archiver/pom.properties
+[INFO] Copying /workspace/target-project/registry/target/registry.jar -> /workspace/target-project/registry/target/docker/target/registry.jar
+[INFO] Copying /workspace/target-project/registry/target/test-classes/cn/zhangxd/registry/ApplicationTests.class -> /workspace/target-project/registry/target/docker/target/test-classes/cn/zhangxd/registry/ApplicationTests.class
+[INFO] Copying /workspace/target-project/registry/target/registry.jar.original -> /workspace/target-project/registry/target/docker/target/registry.jar.original
+[INFO] Copying /workspace/target-project/registry/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst -> /workspace/target-project/registry/target/docker/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+[INFO] Copying /workspace/target-project/registry/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst -> /workspace/target-project/registry/target/docker/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+[INFO] Copying /workspace/target-project/registry/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst -> /workspace/target-project/registry/target/docker/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+[INFO] Copying /workspace/target-project/registry/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst -> /workspace/target-project/registry/target/docker/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+[INFO] Copying /workspace/target-project/registry/target/docker/registry.jar -> /workspace/target-project/registry/target/docker/target/docker/registry.jar
+[INFO] Copying /workspace/target-project/registry/target/classes/cn/zhangxd/registry/RegistryApplication.class -> /workspace/target-project/registry/target/docker/target/classes/cn/zhangxd/registry/RegistryApplication.class
+[INFO] Copying /workspace/target-project/registry/target/classes/application.yml -> /workspace/target-project/registry/target/docker/target/classes/application.yml
+[INFO] Copying /workspace/target-project/registry/target/classes/bootstrap.yml -> /workspace/target-project/registry/target/docker/target/classes/bootstrap.yml
+[INFO] Copying /workspace/target-project/registry/pom.xml -> /workspace/target-project/registry/target/docker/pom.xml
+[INFO] Copying /workspace/target-project/registry/Dockerfile -> /workspace/target-project/registry/target/docker/Dockerfile
+[INFO] Building image spring-boot-cloud/registry
+Aug 04, 2025 1:37:41 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.io.IOException) caught when processing request to {}->unix://localhost:80: No such file or directory
+Aug 04, 2025 1:37:41 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->unix://localhost:80
+Aug 04, 2025 1:37:41 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.io.IOException) caught when processing request to {}->unix://localhost:80: No such file or directory
+Aug 04, 2025 1:37:41 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->unix://localhost:80
+Aug 04, 2025 1:37:41 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.io.IOException) caught when processing request to {}->unix://localhost:80: No such file or directory
+Aug 04, 2025 1:37:41 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->unix://localhost:80
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for spring-boot-cloud 1.0-SNAPSHOT:
+[INFO] 
+[INFO] spring-boot-cloud .................................. SUCCESS [  0.216 s]
+[INFO] registry ........................................... FAILURE [  8.214 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.667 s
+[INFO] Finished at: 2025-08-04T13:37:41Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal com.spotify:docker-maven-plugin:1.0.0:build (default) on project registry: Exception caught: java.util.concurrent.ExecutionException: com.spotify.docker.client.shaded.javax.ws.rs.ProcessingException: java.io.IOException: No such file or directory -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :registry
+Failed with Java at /usr/local/openjdk-8
+Trying Java version: openjdk version "11.0.28" 2025-07-15
+testing Step 1
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] spring-boot-cloud                                                  [pom]
+[INFO] registry                                                           [jar]
+[INFO] 
+[INFO] --------------------< cn.zhangxd:spring-boot-cloud >--------------------
+[INFO] Building spring-boot-cloud 1.0-SNAPSHOT                            [1/2]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ spring-boot-cloud ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-boot-cloud ---
+[INFO] Installing /workspace/target-project/pom.xml to /root/.m2/repository/cn/zhangxd/spring-boot-cloud/1.0-SNAPSHOT/spring-boot-cloud-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------------------< cn.zhangxd:registry >-------------------------
+[INFO] Building registry 1.0-SNAPSHOT                                     [2/2]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ registry ---
+[INFO] Deleting /workspace/target-project/registry/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ registry ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ registry ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /workspace/target-project/registry/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ registry ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /workspace/target-project/registry/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ registry ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /workspace/target-project/registry/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ registry ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ registry ---
+[INFO] Building jar: /workspace/target-project/registry/target/registry.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.5.6.RELEASE:repackage (default) @ registry ---
+[INFO] 
+[INFO] --- docker-maven-plugin:1.0.0:build (default) @ registry ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /workspace/target-project/registry/target/registry.jar -> /workspace/target-project/registry/target/docker/registry.jar
+[INFO] Copying /workspace/target-project/registry/src/test/java/cn/zhangxd/registry/ApplicationTests.java -> /workspace/target-project/registry/target/docker/src/test/java/cn/zhangxd/registry/ApplicationTests.java
+[INFO] Copying /workspace/target-project/registry/src/main/java/cn/zhangxd/registry/RegistryApplication.java -> /workspace/target-project/registry/target/docker/src/main/java/cn/zhangxd/registry/RegistryApplication.java
+[INFO] Copying /workspace/target-project/registry/src/main/resources/application.yml -> /workspace/target-project/registry/target/docker/src/main/resources/application.yml
+[INFO] Copying /workspace/target-project/registry/src/main/resources/bootstrap.yml -> /workspace/target-project/registry/target/docker/src/main/resources/bootstrap.yml
+[INFO] Copying /workspace/target-project/registry/target/maven-archiver/pom.properties -> /workspace/target-project/registry/target/docker/target/maven-archiver/pom.properties
+[INFO] Copying /workspace/target-project/registry/target/registry.jar -> /workspace/target-project/registry/target/docker/target/registry.jar
+[INFO] Copying /workspace/target-project/registry/target/test-classes/cn/zhangxd/registry/ApplicationTests.class -> /workspace/target-project/registry/target/docker/target/test-classes/cn/zhangxd/registry/ApplicationTests.class
+[INFO] Copying /workspace/target-project/registry/target/registry.jar.original -> /workspace/target-project/registry/target/docker/target/registry.jar.original
+[INFO] Copying /workspace/target-project/registry/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst -> /workspace/target-project/registry/target/docker/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+[INFO] Copying /workspace/target-project/registry/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst -> /workspace/target-project/registry/target/docker/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+[INFO] Copying /workspace/target-project/registry/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst -> /workspace/target-project/registry/target/docker/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+[INFO] Copying /workspace/target-project/registry/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst -> /workspace/target-project/registry/target/docker/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+[INFO] Copying /workspace/target-project/registry/target/docker/registry.jar -> /workspace/target-project/registry/target/docker/target/docker/registry.jar
+[INFO] Copying /workspace/target-project/registry/target/classes/cn/zhangxd/registry/RegistryApplication.class -> /workspace/target-project/registry/target/docker/target/classes/cn/zhangxd/registry/RegistryApplication.class
+[INFO] Copying /workspace/target-project/registry/target/classes/application.yml -> /workspace/target-project/registry/target/docker/target/classes/application.yml
+[INFO] Copying /workspace/target-project/registry/target/classes/bootstrap.yml -> /workspace/target-project/registry/target/docker/target/classes/bootstrap.yml
+[INFO] Copying /workspace/target-project/registry/pom.xml -> /workspace/target-project/registry/target/docker/pom.xml
+[INFO] Copying /workspace/target-project/registry/Dockerfile -> /workspace/target-project/registry/target/docker/Dockerfile
+[INFO] Building image spring-boot-cloud/registry
+Aug 04, 2025 1:37:50 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.io.IOException) caught when processing request to {}->unix://localhost:80: No such file or directory
+Aug 04, 2025 1:37:50 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->unix://localhost:80
+Aug 04, 2025 1:37:50 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.io.IOException) caught when processing request to {}->unix://localhost:80: No such file or directory
+Aug 04, 2025 1:37:50 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->unix://localhost:80
+Aug 04, 2025 1:37:50 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.io.IOException) caught when processing request to {}->unix://localhost:80: No such file or directory
+Aug 04, 2025 1:37:50 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->unix://localhost:80
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for spring-boot-cloud 1.0-SNAPSHOT:
+[INFO] 
+[INFO] spring-boot-cloud .................................. SUCCESS [  0.241 s]
+[INFO] registry ........................................... FAILURE [  7.976 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.445 s
+[INFO] Finished at: 2025-08-04T13:37:50Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal com.spotify:docker-maven-plugin:1.0.0:build (default) on project registry: Exception caught: java.util.concurrent.ExecutionException: com.spotify.docker.client.shaded.javax.ws.rs.ProcessingException: java.io.IOException: No such file or directory -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :registry
+Failed with Java at /usr/lib/jvm/java-11-openjdk-amd64
+Trying Java version: openjdk version "17.0.15" 2025-04-15
+testing Step 1
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] spring-boot-cloud                                                  [pom]
+[INFO] registry                                                           [jar]
+[INFO] 
+[INFO] --------------------< cn.zhangxd:spring-boot-cloud >--------------------
+[INFO] Building spring-boot-cloud 1.0-SNAPSHOT                            [1/2]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ spring-boot-cloud ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-boot-cloud ---
+[INFO] Installing /workspace/target-project/pom.xml to /root/.m2/repository/cn/zhangxd/spring-boot-cloud/1.0-SNAPSHOT/spring-boot-cloud-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------------------< cn.zhangxd:registry >-------------------------
+[INFO] Building registry 1.0-SNAPSHOT                                     [2/2]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ registry ---
+[INFO] Deleting /workspace/target-project/registry/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ registry ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ registry ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /workspace/target-project/registry/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ registry ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /workspace/target-project/registry/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ registry ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /workspace/target-project/registry/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ registry ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ registry ---
+[INFO] Building jar: /workspace/target-project/registry/target/registry.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.5.6.RELEASE:repackage (default) @ registry ---
+[INFO] 
+[INFO] --- docker-maven-plugin:1.0.0:build (default) @ registry ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /workspace/target-project/registry/target/registry.jar -> /workspace/target-project/registry/target/docker/registry.jar
+[INFO] Copying /workspace/target-project/registry/src/test/java/cn/zhangxd/registry/ApplicationTests.java -> /workspace/target-project/registry/target/docker/src/test/java/cn/zhangxd/registry/ApplicationTests.java
+[INFO] Copying /workspace/target-project/registry/src/main/java/cn/zhangxd/registry/RegistryApplication.java -> /workspace/target-project/registry/target/docker/src/main/java/cn/zhangxd/registry/RegistryApplication.java
+[INFO] Copying /workspace/target-project/registry/src/main/resources/application.yml -> /workspace/target-project/registry/target/docker/src/main/resources/application.yml
+[INFO] Copying /workspace/target-project/registry/src/main/resources/bootstrap.yml -> /workspace/target-project/registry/target/docker/src/main/resources/bootstrap.yml
+[INFO] Copying /workspace/target-project/registry/target/maven-archiver/pom.properties -> /workspace/target-project/registry/target/docker/target/maven-archiver/pom.properties
+[INFO] Copying /workspace/target-project/registry/target/registry.jar -> /workspace/target-project/registry/target/docker/target/registry.jar
+[INFO] Copying /workspace/target-project/registry/target/test-classes/cn/zhangxd/registry/ApplicationTests.class -> /workspace/target-project/registry/target/docker/target/test-classes/cn/zhangxd/registry/ApplicationTests.class
+[INFO] Copying /workspace/target-project/registry/target/registry.jar.original -> /workspace/target-project/registry/target/docker/target/registry.jar.original
+[INFO] Copying /workspace/target-project/registry/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst -> /workspace/target-project/registry/target/docker/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+[INFO] Copying /workspace/target-project/registry/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst -> /workspace/target-project/registry/target/docker/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+[INFO] Copying /workspace/target-project/registry/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst -> /workspace/target-project/registry/target/docker/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+[INFO] Copying /workspace/target-project/registry/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst -> /workspace/target-project/registry/target/docker/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+[INFO] Copying /workspace/target-project/registry/target/docker/registry.jar -> /workspace/target-project/registry/target/docker/target/docker/registry.jar
+[INFO] Copying /workspace/target-project/registry/target/classes/cn/zhangxd/registry/RegistryApplication.class -> /workspace/target-project/registry/target/docker/target/classes/cn/zhangxd/registry/RegistryApplication.class
+[INFO] Copying /workspace/target-project/registry/target/classes/application.yml -> /workspace/target-project/registry/target/docker/target/classes/application.yml
+[INFO] Copying /workspace/target-project/registry/target/classes/bootstrap.yml -> /workspace/target-project/registry/target/docker/target/classes/bootstrap.yml
+[INFO] Copying /workspace/target-project/registry/pom.xml -> /workspace/target-project/registry/target/docker/pom.xml
+[INFO] Copying /workspace/target-project/registry/Dockerfile -> /workspace/target-project/registry/target/docker/Dockerfile
+[INFO] Building image spring-boot-cloud/registry
+Aug 04, 2025 1:37:59 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.io.IOException) caught when processing request to {}->unix://localhost:80: No such file or directory
+Aug 04, 2025 1:37:59 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->unix://localhost:80
+Aug 04, 2025 1:37:59 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.io.IOException) caught when processing request to {}->unix://localhost:80: No such file or directory
+Aug 04, 2025 1:37:59 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->unix://localhost:80
+Aug 04, 2025 1:37:59 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.io.IOException) caught when processing request to {}->unix://localhost:80: No such file or directory
+Aug 04, 2025 1:37:59 PM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->unix://localhost:80
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for spring-boot-cloud 1.0-SNAPSHOT:
+[INFO] 
+[INFO] spring-boot-cloud .................................. SUCCESS [  0.207 s]
+[INFO] registry ........................................... FAILURE [  7.412 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.838 s
+[INFO] Finished at: 2025-08-04T13:37:59Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal com.spotify:docker-maven-plugin:1.0.0:build (default) on project registry: Exception caught: java.util.concurrent.ExecutionException: com.spotify.docker.client.shaded.javax.ws.rs.ProcessingException: java.io.IOException: No such file or directory -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :registry
+Failed with Java at /usr/lib/jvm/java-17-openjdk-amd64
+All Java versions failed

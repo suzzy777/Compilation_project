@@ -1,0 +1,397 @@
+===== Step 1 + 2 + 3 + 4 =====
+Trying Java version: openjdk version "1.8.0_342"
+testing Step 1
+[INFO] Scanning for projects...
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/jackson-base/3.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 614 B                   Downloaded from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/jackson-base/3.0.0-SNAPSHOT/maven-metadata.xml (614 B at 1.5 kB/s)
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/jackson-bom/3.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 613 B                   Downloaded from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/jackson-bom/3.0.0-SNAPSHOT/maven-metadata.xml (613 B at 6.3 kB/s)
+[INFO] Inspecting build with total of 2 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 2 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Jackson dataformats: Binary                                        [pom]
+[INFO] Jackson dataformat: CBOR                                        [bundle]
+[INFO] 
+[INFO] ----< com.fasterxml.jackson.dataformat:jackson-dataformats-binary >-----
+[INFO] Building Jackson dataformats: Binary 3.0.0-SNAPSHOT                [1/2]
+[INFO] --------------------------------[ pom ]---------------------------------
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-core/3.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.2 kB                    Downloaded from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-core/3.0.0-SNAPSHOT/maven-metadata.xml (1.2 kB at 23 kB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ jackson-dataformats-binary ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-java) @ jackson-dataformats-binary ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (default) @ jackson-dataformats-binary ---
+[INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/workspace/target-project/target/jacoco.exec -Xmx1024m
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-generated-sources) @ jackson-dataformats-binary ---
+[INFO] Source directory: /workspace/target-project/target/generated-sources added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-resource (add-resource) @ jackson-dataformats-binary ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:report (report) @ jackson-dataformats-binary ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- maven-site-plugin:3.9.1:attach-descriptor (attach-descriptor) @ jackson-dataformats-binary ---
+[INFO] No site descriptor found: nothing to attach.
+[INFO] 
+[INFO] --- gradle-module-metadata-maven-plugin:0.2.0:gmm (default) @ jackson-dataformats-binary ---
+[INFO] 
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ jackson-dataformats-binary ---
+[INFO] Installing /workspace/target-project/pom.xml to /root/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformats-binary/3.0.0-SNAPSHOT/jackson-dataformats-binary-3.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ------< com.fasterxml.jackson.dataformat:jackson-dataformat-cbor >------
+[INFO] Building Jackson dataformat: CBOR 3.0.0-SNAPSHOT                   [2/2]
+[INFO] -------------------------------[ bundle ]-------------------------------
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-databind/3.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.2 kB                    Downloaded from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-databind/3.0.0-SNAPSHOT/maven-metadata.xml (1.2 kB at 20 kB/s)
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-annotations/3.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.2 kB                    Downloaded from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-annotations/3.0-SNAPSHOT/maven-metadata.xml (1.2 kB at 30 kB/s)
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/tools/jackson/jackson-base/3.0.0-SNAPSHOT/maven-metadata.xml
+Downloading from sonatype-nexus-new-snapshots: https://s01.oss.sonatype.org/content/repositories/snapshots/tools/jackson/jackson-base/3.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 604 B                   Downloaded from sonatype-nexus-new-snapshots: https://s01.oss.sonatype.org/content/repositories/snapshots/tools/jackson/jackson-base/3.0.0-SNAPSHOT/maven-metadata.xml (604 B at 3.9 kB/s)
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/tools/jackson/jackson-bom/3.0.0-SNAPSHOT/maven-metadata.xml
+Downloading from sonatype-nexus-new-snapshots: https://s01.oss.sonatype.org/content/repositories/snapshots/tools/jackson/jackson-bom/3.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 603 B                   Downloaded from sonatype-nexus-new-snapshots: https://s01.oss.sonatype.org/content/repositories/snapshots/tools/jackson/jackson-bom/3.0.0-SNAPSHOT/maven-metadata.xml (603 B at 11 kB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ jackson-dataformat-cbor ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-java) @ jackson-dataformat-cbor ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (default) @ jackson-dataformat-cbor ---
+[INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/workspace/target-project/cbor/target/jacoco.exec -Xmx1024m
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-generated-sources) @ jackson-dataformat-cbor ---
+[INFO] Source directory: /workspace/target-project/cbor/target/generated-sources added.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (process-packageVersion) @ jackson-dataformat-cbor ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-resource (add-resource) @ jackson-dataformat-cbor ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ jackson-dataformat-cbor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ jackson-dataformat-cbor ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to /workspace/target-project/cbor/target/classes
+[INFO] /workspace/target-project/cbor/src/main/java/com/fasterxml/jackson/dataformat/cbor/databind/CBORMapper.java: /workspace/target-project/cbor/src/main/java/com/fasterxml/jackson/dataformat/cbor/databind/CBORMapper.java uses unchecked or unsafe operations.
+[INFO] /workspace/target-project/cbor/src/main/java/com/fasterxml/jackson/dataformat/cbor/databind/CBORMapper.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ jackson-dataformat-cbor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ jackson-dataformat-cbor ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 67 source files to /workspace/target-project/cbor/target/test-classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /workspace/target-project/cbor/src/test/java/com/fasterxml/jackson/dataformat/cbor/mapper/UnknownPropertyDeserTest.java:[64,6] cannot access com.fasterxml.jackson.annotation.JsonIgnoreProperties
+  bad class file: /root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/3.0-SNAPSHOT/jackson-annotations-3.0-SNAPSHOT.jar(com/fasterxml/jackson/annotation/JsonIgnoreProperties.class)
+    class file has wrong version 61.0, should be 52.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Jackson dataformats: Binary 3.0.0-SNAPSHOT:
+[INFO] 
+[INFO] Jackson dataformats: Binary ........................ SUCCESS [  0.936 s]
+[INFO] Jackson dataformat: CBOR ........................... FAILURE [  1.852 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.650 s
+[INFO] Finished at: 2025-08-04T16:22:51Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:testCompile (default-testCompile) on project jackson-dataformat-cbor: Compilation failure
+[ERROR] /workspace/target-project/cbor/src/test/java/com/fasterxml/jackson/dataformat/cbor/mapper/UnknownPropertyDeserTest.java:[64,6] cannot access com.fasterxml.jackson.annotation.JsonIgnoreProperties
+[ERROR]   bad class file: /root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/3.0-SNAPSHOT/jackson-annotations-3.0-SNAPSHOT.jar(com/fasterxml/jackson/annotation/JsonIgnoreProperties.class)
+[ERROR]     class file has wrong version 61.0, should be 52.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :jackson-dataformat-cbor
+Failed with Java at /usr/local/openjdk-8
+Trying Java version: openjdk version "11.0.28" 2025-07-15
+testing Step 1
+[INFO] Scanning for projects...
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/jackson-base/3.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 614 B                   Downloaded from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/jackson-base/3.0.0-SNAPSHOT/maven-metadata.xml (614 B at 1.4 kB/s)
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/jackson-bom/3.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 613 B                   Downloaded from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/jackson-bom/3.0.0-SNAPSHOT/maven-metadata.xml (613 B at 14 kB/s)
+[INFO] Inspecting build with total of 2 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 2 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Jackson dataformats: Binary                                        [pom]
+[INFO] Jackson dataformat: CBOR                                        [bundle]
+[INFO] 
+[INFO] ----< com.fasterxml.jackson.dataformat:jackson-dataformats-binary >-----
+[INFO] Building Jackson dataformats: Binary 3.0.0-SNAPSHOT                [1/2]
+[INFO] --------------------------------[ pom ]---------------------------------
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-core/3.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.2 kB                    Downloaded from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-core/3.0.0-SNAPSHOT/maven-metadata.xml (1.2 kB at 24 kB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ jackson-dataformats-binary ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-java) @ jackson-dataformats-binary ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (default) @ jackson-dataformats-binary ---
+[INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/workspace/target-project/target/jacoco.exec -Xmx1024m
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-generated-sources) @ jackson-dataformats-binary ---
+[INFO] Source directory: /workspace/target-project/target/generated-sources added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-resource (add-resource) @ jackson-dataformats-binary ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:report (report) @ jackson-dataformats-binary ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- maven-site-plugin:3.9.1:attach-descriptor (attach-descriptor) @ jackson-dataformats-binary ---
+[INFO] No site descriptor found: nothing to attach.
+[INFO] 
+[INFO] --- gradle-module-metadata-maven-plugin:0.2.0:gmm (default) @ jackson-dataformats-binary ---
+[INFO] 
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ jackson-dataformats-binary ---
+[INFO] Installing /workspace/target-project/pom.xml to /root/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformats-binary/3.0.0-SNAPSHOT/jackson-dataformats-binary-3.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ------< com.fasterxml.jackson.dataformat:jackson-dataformat-cbor >------
+[INFO] Building Jackson dataformat: CBOR 3.0.0-SNAPSHOT                   [2/2]
+[INFO] -------------------------------[ bundle ]-------------------------------
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-databind/3.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.2 kB                    Downloaded from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-databind/3.0.0-SNAPSHOT/maven-metadata.xml (1.2 kB at 21 kB/s)
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-annotations/3.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.2 kB                    Downloaded from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-annotations/3.0-SNAPSHOT/maven-metadata.xml (1.2 kB at 28 kB/s)
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/tools/jackson/jackson-base/3.0.0-SNAPSHOT/maven-metadata.xml
+Downloading from sonatype-nexus-new-snapshots: https://s01.oss.sonatype.org/content/repositories/snapshots/tools/jackson/jackson-base/3.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 604 B                   Downloaded from sonatype-nexus-new-snapshots: https://s01.oss.sonatype.org/content/repositories/snapshots/tools/jackson/jackson-base/3.0.0-SNAPSHOT/maven-metadata.xml (604 B at 3.7 kB/s)
+Downloading from sonatype-nexus-new-snapshots: https://s01.oss.sonatype.org/content/repositories/snapshots/tools/jackson/jackson-bom/3.0.0-SNAPSHOT/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/tools/jackson/jackson-bom/3.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 603 B                   Downloaded from sonatype-nexus-new-snapshots: https://s01.oss.sonatype.org/content/repositories/snapshots/tools/jackson/jackson-bom/3.0.0-SNAPSHOT/maven-metadata.xml (603 B at 10 kB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ jackson-dataformat-cbor ---
+[INFO] Deleting /workspace/target-project/cbor/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-java) @ jackson-dataformat-cbor ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (default) @ jackson-dataformat-cbor ---
+[INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/workspace/target-project/cbor/target/jacoco.exec -Xmx1024m
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-generated-sources) @ jackson-dataformat-cbor ---
+[INFO] Source directory: /workspace/target-project/cbor/target/generated-sources added.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (process-packageVersion) @ jackson-dataformat-cbor ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-resource (add-resource) @ jackson-dataformat-cbor ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ jackson-dataformat-cbor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ jackson-dataformat-cbor ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to /workspace/target-project/cbor/target/classes
+[INFO] /workspace/target-project/cbor/src/main/java/com/fasterxml/jackson/dataformat/cbor/databind/CBORMapper.java: /workspace/target-project/cbor/src/main/java/com/fasterxml/jackson/dataformat/cbor/databind/CBORMapper.java uses unchecked or unsafe operations.
+[INFO] /workspace/target-project/cbor/src/main/java/com/fasterxml/jackson/dataformat/cbor/databind/CBORMapper.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ jackson-dataformat-cbor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ jackson-dataformat-cbor ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 67 source files to /workspace/target-project/cbor/target/test-classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /workspace/target-project/cbor/src/test/java/com/fasterxml/jackson/dataformat/cbor/mapper/UnknownPropertyDeserTest.java:[64,6] cannot access com.fasterxml.jackson.annotation.JsonIgnoreProperties
+  bad class file: /root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/3.0-SNAPSHOT/jackson-annotations-3.0-SNAPSHOT.jar(com/fasterxml/jackson/annotation/JsonIgnoreProperties.class)
+    class file has wrong version 61.0, should be 52.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Jackson dataformats: Binary 3.0.0-SNAPSHOT:
+[INFO] 
+[INFO] Jackson dataformats: Binary ........................ SUCCESS [  0.966 s]
+[INFO] Jackson dataformat: CBOR ........................... FAILURE [  1.686 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.659 s
+[INFO] Finished at: 2025-08-04T16:22:57Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:testCompile (default-testCompile) on project jackson-dataformat-cbor: Compilation failure
+[ERROR] /workspace/target-project/cbor/src/test/java/com/fasterxml/jackson/dataformat/cbor/mapper/UnknownPropertyDeserTest.java:[64,6] cannot access com.fasterxml.jackson.annotation.JsonIgnoreProperties
+[ERROR]   bad class file: /root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/3.0-SNAPSHOT/jackson-annotations-3.0-SNAPSHOT.jar(com/fasterxml/jackson/annotation/JsonIgnoreProperties.class)
+[ERROR]     class file has wrong version 61.0, should be 52.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :jackson-dataformat-cbor
+Failed with Java at /usr/lib/jvm/java-11-openjdk-amd64
+Trying Java version: openjdk version "17.0.15" 2025-04-15
+testing Step 1
+[INFO] Scanning for projects...
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/jackson-base/3.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 614 B                   Downloaded from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/jackson-base/3.0.0-SNAPSHOT/maven-metadata.xml (614 B at 1.4 kB/s)
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/jackson-bom/3.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 613 B                   Downloaded from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/jackson-bom/3.0.0-SNAPSHOT/maven-metadata.xml (613 B at 15 kB/s)
+[INFO] Inspecting build with total of 2 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 2 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Jackson dataformats: Binary                                        [pom]
+[INFO] Jackson dataformat: CBOR                                        [bundle]
+[INFO] 
+[INFO] ----< com.fasterxml.jackson.dataformat:jackson-dataformats-binary >-----
+[INFO] Building Jackson dataformats: Binary 3.0.0-SNAPSHOT                [1/2]
+[INFO] --------------------------------[ pom ]---------------------------------
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-core/3.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.2 kB                    Downloaded from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-core/3.0.0-SNAPSHOT/maven-metadata.xml (1.2 kB at 20 kB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ jackson-dataformats-binary ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-java) @ jackson-dataformats-binary ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (default) @ jackson-dataformats-binary ---
+[INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/workspace/target-project/target/jacoco.exec -Xmx1024m
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-generated-sources) @ jackson-dataformats-binary ---
+[INFO] Source directory: /workspace/target-project/target/generated-sources added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-resource (add-resource) @ jackson-dataformats-binary ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:report (report) @ jackson-dataformats-binary ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- maven-site-plugin:3.9.1:attach-descriptor (attach-descriptor) @ jackson-dataformats-binary ---
+[INFO] No site descriptor found: nothing to attach.
+[INFO] 
+[INFO] --- gradle-module-metadata-maven-plugin:0.2.0:gmm (default) @ jackson-dataformats-binary ---
+[INFO] 
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ jackson-dataformats-binary ---
+[INFO] Installing /workspace/target-project/pom.xml to /root/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformats-binary/3.0.0-SNAPSHOT/jackson-dataformats-binary-3.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ------< com.fasterxml.jackson.dataformat:jackson-dataformat-cbor >------
+[INFO] Building Jackson dataformat: CBOR 3.0.0-SNAPSHOT                   [2/2]
+[INFO] -------------------------------[ bundle ]-------------------------------
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-databind/3.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.2 kB                    Downloaded from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-databind/3.0.0-SNAPSHOT/maven-metadata.xml (1.2 kB at 19 kB/s)
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-annotations/3.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.2 kB                    Downloaded from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-annotations/3.0-SNAPSHOT/maven-metadata.xml (1.2 kB at 31 kB/s)
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/tools/jackson/jackson-base/3.0.0-SNAPSHOT/maven-metadata.xml
+Downloading from sonatype-nexus-new-snapshots: https://s01.oss.sonatype.org/content/repositories/snapshots/tools/jackson/jackson-base/3.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 604 B                   Downloaded from sonatype-nexus-new-snapshots: https://s01.oss.sonatype.org/content/repositories/snapshots/tools/jackson/jackson-base/3.0.0-SNAPSHOT/maven-metadata.xml (604 B at 4.1 kB/s)
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/tools/jackson/jackson-bom/3.0.0-SNAPSHOT/maven-metadata.xml
+Downloading from sonatype-nexus-new-snapshots: https://s01.oss.sonatype.org/content/repositories/snapshots/tools/jackson/jackson-bom/3.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 603 B                   Downloaded from sonatype-nexus-new-snapshots: https://s01.oss.sonatype.org/content/repositories/snapshots/tools/jackson/jackson-bom/3.0.0-SNAPSHOT/maven-metadata.xml (603 B at 11 kB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ jackson-dataformat-cbor ---
+[INFO] Deleting /workspace/target-project/cbor/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-java) @ jackson-dataformat-cbor ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (default) @ jackson-dataformat-cbor ---
+[INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/workspace/target-project/cbor/target/jacoco.exec -Xmx1024m
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-generated-sources) @ jackson-dataformat-cbor ---
+[INFO] Source directory: /workspace/target-project/cbor/target/generated-sources added.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (process-packageVersion) @ jackson-dataformat-cbor ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-resource (add-resource) @ jackson-dataformat-cbor ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ jackson-dataformat-cbor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ jackson-dataformat-cbor ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to /workspace/target-project/cbor/target/classes
+[INFO] /workspace/target-project/cbor/src/main/java/com/fasterxml/jackson/dataformat/cbor/databind/CBORMapper.java: /workspace/target-project/cbor/src/main/java/com/fasterxml/jackson/dataformat/cbor/databind/CBORMapper.java uses unchecked or unsafe operations.
+[INFO] /workspace/target-project/cbor/src/main/java/com/fasterxml/jackson/dataformat/cbor/databind/CBORMapper.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ jackson-dataformat-cbor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ jackson-dataformat-cbor ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 67 source files to /workspace/target-project/cbor/target/test-classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /workspace/target-project/cbor/src/test/java/com/fasterxml/jackson/dataformat/cbor/mapper/UnknownPropertyDeserTest.java:[64,6] cannot access com.fasterxml.jackson.annotation.JsonIgnoreProperties
+  bad class file: /root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/3.0-SNAPSHOT/jackson-annotations-3.0-SNAPSHOT.jar(com/fasterxml/jackson/annotation/JsonIgnoreProperties.class)
+    class file has wrong version 61.0, should be 52.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Jackson dataformats: Binary 3.0.0-SNAPSHOT:
+[INFO] 
+[INFO] Jackson dataformats: Binary ........................ SUCCESS [  0.916 s]
+[INFO] Jackson dataformat: CBOR ........................... FAILURE [  1.867 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.704 s
+[INFO] Finished at: 2025-08-04T16:23:03Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:testCompile (default-testCompile) on project jackson-dataformat-cbor: Compilation failure
+[ERROR] /workspace/target-project/cbor/src/test/java/com/fasterxml/jackson/dataformat/cbor/mapper/UnknownPropertyDeserTest.java:[64,6] cannot access com.fasterxml.jackson.annotation.JsonIgnoreProperties
+[ERROR]   bad class file: /root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/3.0-SNAPSHOT/jackson-annotations-3.0-SNAPSHOT.jar(com/fasterxml/jackson/annotation/JsonIgnoreProperties.class)
+[ERROR]     class file has wrong version 61.0, should be 52.0
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the classpath.
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :jackson-dataformat-cbor
+Failed with Java at /usr/lib/jvm/java-17-openjdk-amd64
+All Java versions failed

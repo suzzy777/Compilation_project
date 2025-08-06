@@ -1,0 +1,5 @@
+===== Step 1 + 2 + 3 + 4 =====
+Java not found at /usr/lib/jvm/java-1.8.0-openjdk-arm64
+Java not found at /usr/lib/jvm/java-1.11.0-openjdk-arm64
+Java not found at /usr/lib/jvm/java-1.17.0-openjdk-arm64
+All Java versions failed

@@ -1,0 +1,215 @@
+===== Step 1 + 2 + 4 =====
+Trying Java version: openjdk version "1.8.0_342"
+testing Step 1
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.wso2.balana:org.wso2.balana:bundle:1.1.14-SNAPSHOT
+[WARNING] The expression ${pom.artifactId} is deprecated. Please use ${project.artifactId} instead.
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.wso2.balana:org.wso2.balana.utils:bundle:1.1.14-SNAPSHOT
+[WARNING] The expression ${pom.artifactId} is deprecated. Please use ${project.artifactId} instead.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] WSO2 Balana Open source XACML implementation of WSO2               [pom]
+[INFO] WSO2 Balana Utils                                               [bundle]
+[INFO] WSO2 Balana Core                                                [bundle]
+[INFO] 
+[INFO] -----------------------< org.wso2.balana:balana >-----------------------
+[INFO] Building WSO2 Balana Open source XACML implementation of WSO2 1.1.14-SNAPSHOT [1/3]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ balana ---
+[INFO] Deleting /workspace/target-project/target
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ balana ---
+[INFO] Executing: /bin/sh -c cd '/workspace/target-project' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /workspace/target-project
+[INFO] Storing buildNumber: 9088b3a079ac227a10d07707f571cc5b205dca98 at timestamp: 1754320118044
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/workspace/target-project' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /workspace/target-project
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ balana ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ balana ---
+[INFO] Installing /workspace/target-project/pom.xml to /root/.m2/repository/org/wso2/balana/balana/1.1.14-SNAPSHOT/balana-1.1.14-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------< org.wso2.balana:org.wso2.balana.utils >----------------
+[INFO] Building WSO2 Balana Utils 1.1.14-SNAPSHOT                         [2/3]
+[INFO] -------------------------------[ bundle ]-------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/xerces/wso2/xercesImpl/2.8.1.wso2v2/xercesImpl-2.8.1.wso2v2.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for WSO2 Balana Open source XACML implementation of WSO2 1.1.14-SNAPSHOT:
+[INFO] 
+[INFO] WSO2 Balana Open source XACML implementation of WSO2 SUCCESS [  0.790 s]
+[INFO] WSO2 Balana Utils .................................. FAILURE [  0.518 s]
+[INFO] WSO2 Balana Core ................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.763 s
+[INFO] Finished at: 2025-08-04T15:08:38Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project org.wso2.balana.utils: Could not resolve dependencies for project org.wso2.balana:org.wso2.balana.utils:bundle:1.1.14-SNAPSHOT: Failed to collect dependencies at xerces.wso2:xercesImpl:jar:2.8.1.wso2v2: Failed to read artifact descriptor for xerces.wso2:xercesImpl:jar:2.8.1.wso2v2: Could not transfer artifact xerces.wso2:xercesImpl:pom:2.8.1.wso2v2 from/to maven-default-http-blocker (http://0.0.0.0/): Blocked mirror for repositories: [central (http://repo1.maven.org/maven2, default, releases+snapshots), wso2-maven2-repository (http://dist.wso2.org/maven2, default, releases+snapshots), wso2.releases (http://maven.wso2.org/nexus/content/repositories/releases/, default, releases+snapshots), wso2.snapshots (http://maven.wso2.org/nexus/content/repositories/snapshots/, default, snapshots), wso2-nexus (http://maven.wso2.org/nexus/content/groups/wso2-public/, default, releases+snapshots)] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :org.wso2.balana.utils
+Failed with Java at /usr/local/openjdk-8
+Trying Java version: openjdk version "11.0.28" 2025-07-15
+testing Step 1
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.wso2.balana:org.wso2.balana:bundle:1.1.14-SNAPSHOT
+[WARNING] The expression ${pom.artifactId} is deprecated. Please use ${project.artifactId} instead.
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.wso2.balana:org.wso2.balana.utils:bundle:1.1.14-SNAPSHOT
+[WARNING] The expression ${pom.artifactId} is deprecated. Please use ${project.artifactId} instead.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] WSO2 Balana Open source XACML implementation of WSO2               [pom]
+[INFO] WSO2 Balana Utils                                               [bundle]
+[INFO] WSO2 Balana Core                                                [bundle]
+[INFO] 
+[INFO] -----------------------< org.wso2.balana:balana >-----------------------
+[INFO] Building WSO2 Balana Open source XACML implementation of WSO2 1.1.14-SNAPSHOT [1/3]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ balana ---
+[INFO] Deleting /workspace/target-project/target
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ balana ---
+[INFO] Executing: /bin/sh -c cd '/workspace/target-project' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /workspace/target-project
+[INFO] Storing buildNumber: 9088b3a079ac227a10d07707f571cc5b205dca98 at timestamp: 1754320121063
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/workspace/target-project' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /workspace/target-project
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ balana ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ balana ---
+[INFO] Installing /workspace/target-project/pom.xml to /root/.m2/repository/org/wso2/balana/balana/1.1.14-SNAPSHOT/balana-1.1.14-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------< org.wso2.balana:org.wso2.balana.utils >----------------
+[INFO] Building WSO2 Balana Utils 1.1.14-SNAPSHOT                         [2/3]
+[INFO] -------------------------------[ bundle ]-------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/xerces/wso2/xercesImpl/2.8.1.wso2v2/xercesImpl-2.8.1.wso2v2.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for WSO2 Balana Open source XACML implementation of WSO2 1.1.14-SNAPSHOT:
+[INFO] 
+[INFO] WSO2 Balana Open source XACML implementation of WSO2 SUCCESS [  0.802 s]
+[INFO] WSO2 Balana Utils .................................. FAILURE [  0.459 s]
+[INFO] WSO2 Balana Core ................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.751 s
+[INFO] Finished at: 2025-08-04T15:08:41Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project org.wso2.balana.utils: Could not resolve dependencies for project org.wso2.balana:org.wso2.balana.utils:bundle:1.1.14-SNAPSHOT: Failed to collect dependencies at xerces.wso2:xercesImpl:jar:2.8.1.wso2v2: Failed to read artifact descriptor for xerces.wso2:xercesImpl:jar:2.8.1.wso2v2: Could not transfer artifact xerces.wso2:xercesImpl:pom:2.8.1.wso2v2 from/to maven-default-http-blocker (http://0.0.0.0/): Blocked mirror for repositories: [central (http://repo1.maven.org/maven2, default, releases+snapshots), wso2-maven2-repository (http://dist.wso2.org/maven2, default, releases+snapshots), wso2.releases (http://maven.wso2.org/nexus/content/repositories/releases/, default, releases+snapshots), wso2.snapshots (http://maven.wso2.org/nexus/content/repositories/snapshots/, default, snapshots), wso2-nexus (http://maven.wso2.org/nexus/content/groups/wso2-public/, default, releases+snapshots)] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :org.wso2.balana.utils
+Failed with Java at /usr/lib/jvm/java-11-openjdk-amd64
+Trying Java version: openjdk version "17.0.15" 2025-04-15
+testing Step 1
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.wso2.balana:org.wso2.balana:bundle:1.1.14-SNAPSHOT
+[WARNING] The expression ${pom.artifactId} is deprecated. Please use ${project.artifactId} instead.
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.wso2.balana:org.wso2.balana.utils:bundle:1.1.14-SNAPSHOT
+[WARNING] The expression ${pom.artifactId} is deprecated. Please use ${project.artifactId} instead.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] WSO2 Balana Open source XACML implementation of WSO2               [pom]
+[INFO] WSO2 Balana Utils                                               [bundle]
+[INFO] WSO2 Balana Core                                                [bundle]
+[INFO] 
+[INFO] -----------------------< org.wso2.balana:balana >-----------------------
+[INFO] Building WSO2 Balana Open source XACML implementation of WSO2 1.1.14-SNAPSHOT [1/3]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ balana ---
+[INFO] Deleting /workspace/target-project/target
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ balana ---
+[INFO] Executing: /bin/sh -c cd '/workspace/target-project' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /workspace/target-project
+[INFO] Storing buildNumber: 9088b3a079ac227a10d07707f571cc5b205dca98 at timestamp: 1754320123911
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/workspace/target-project' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /workspace/target-project
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ balana ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ balana ---
+[INFO] Installing /workspace/target-project/pom.xml to /root/.m2/repository/org/wso2/balana/balana/1.1.14-SNAPSHOT/balana-1.1.14-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------< org.wso2.balana:org.wso2.balana.utils >----------------
+[INFO] Building WSO2 Balana Utils 1.1.14-SNAPSHOT                         [2/3]
+[INFO] -------------------------------[ bundle ]-------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/xerces/wso2/xercesImpl/2.8.1.wso2v2/xercesImpl-2.8.1.wso2v2.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for WSO2 Balana Open source XACML implementation of WSO2 1.1.14-SNAPSHOT:
+[INFO] 
+[INFO] WSO2 Balana Open source XACML implementation of WSO2 SUCCESS [  0.827 s]
+[INFO] WSO2 Balana Utils .................................. FAILURE [  0.483 s]
+[INFO] WSO2 Balana Core ................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.771 s
+[INFO] Finished at: 2025-08-04T15:08:44Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project org.wso2.balana.utils: Could not resolve dependencies for project org.wso2.balana:org.wso2.balana.utils:bundle:1.1.14-SNAPSHOT: Failed to collect dependencies at xerces.wso2:xercesImpl:jar:2.8.1.wso2v2: Failed to read artifact descriptor for xerces.wso2:xercesImpl:jar:2.8.1.wso2v2: Could not transfer artifact xerces.wso2:xercesImpl:pom:2.8.1.wso2v2 from/to maven-default-http-blocker (http://0.0.0.0/): Blocked mirror for repositories: [central (http://repo1.maven.org/maven2, default, releases+snapshots), wso2-maven2-repository (http://dist.wso2.org/maven2, default, releases+snapshots), wso2.releases (http://maven.wso2.org/nexus/content/repositories/releases/, default, releases+snapshots), wso2.snapshots (http://maven.wso2.org/nexus/content/repositories/snapshots/, default, snapshots), wso2-nexus (http://maven.wso2.org/nexus/content/groups/wso2-public/, default, releases+snapshots)] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :org.wso2.balana.utils
+Failed with Java at /usr/lib/jvm/java-17-openjdk-amd64
+All Java versions failed

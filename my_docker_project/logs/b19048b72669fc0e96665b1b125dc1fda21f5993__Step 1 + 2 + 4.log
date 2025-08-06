@@ -1,0 +1,212 @@
+===== Step 1 + 2 + 4 =====
+Trying Java version: openjdk version "1.8.0_342"
+testing Step 1
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] WildFly: Parent Aggregator                                         [pom]
+[INFO] WildFly: Naming Subsystem                                          [jar]
+[INFO] 
+[INFO] ---------------------< org.wildfly:wildfly-parent >---------------------
+[INFO] Building WildFly: Parent Aggregator 15.0.0.Alpha1-SNAPSHOT         [1/2]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ wildfly-parent ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (ban-bad-dependencies) @ wildfly-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java-version) @ wildfly-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ wildfly-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ wildfly-parent ---
+[INFO] Executing: /bin/sh -c cd '/workspace/target-project' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /workspace/target-project
+[INFO] Storing buildNumber: b19048b72669fc0e96665b1b125dc1fda21f5993 at timestamp: 1754322783009
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/workspace/target-project' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /workspace/target-project
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:checkstyle (check-style) @ wildfly-parent ---
+[INFO] 
+[INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ wildfly-parent ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ wildfly-parent ---
+[INFO] Installing /workspace/target-project/pom.xml to /root/.m2/repository/org/wildfly/wildfly-parent/15.0.0.Alpha1-SNAPSHOT/wildfly-parent-15.0.0.Alpha1-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------------< org.wildfly:wildfly-naming >---------------------
+[INFO] Building WildFly: Naming Subsystem 15.0.0.Alpha1-SNAPSHOT          [2/2]
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl/2.12.0.SP02/xercesImpl-2.12.0.SP02.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.22.jbossorg-1/jcl-over-slf4j-1.7.22.jbossorg-1.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.22.jbossorg-1/slf4j-api-1.7.22.jbossorg-1.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for WildFly: Parent Aggregator 15.0.0.Alpha1-SNAPSHOT:
+[INFO] 
+[INFO] WildFly: Parent Aggregator ......................... SUCCESS [  1.178 s]
+[INFO] WildFly: Naming Subsystem .......................... FAILURE [  0.908 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.198 s
+[INFO] Finished at: 2025-08-04T15:53:04Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project wildfly-naming: Could not resolve dependencies for project org.wildfly:wildfly-naming:jar:15.0.0.Alpha1-SNAPSHOT: Failed to collect dependencies at org.wildfly.core:wildfly-subsystem-test:pom:7.0.0.Alpha1 -> org.wildfly.core:wildfly-subsystem-test-framework:jar:7.0.0.Alpha1 -> xerces:xercesImpl:jar:2.12.0.SP02: Failed to read artifact descriptor for xerces:xercesImpl:jar:2.12.0.SP02: Could not transfer artifact xerces:xercesImpl:pom:2.12.0.SP02 from/to maven-default-http-blocker (http://0.0.0.0/): Blocked mirror for repositories: [jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/, default, releases+snapshots)] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :wildfly-naming
+Failed with Java at /usr/local/openjdk-8
+Trying Java version: openjdk version "11.0.28" 2025-07-15
+testing Step 1
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] WildFly: Parent Aggregator                                         [pom]
+[INFO] WildFly: Naming Subsystem                                          [jar]
+[INFO] 
+[INFO] ---------------------< org.wildfly:wildfly-parent >---------------------
+[INFO] Building WildFly: Parent Aggregator 15.0.0.Alpha1-SNAPSHOT         [1/2]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ wildfly-parent ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (ban-bad-dependencies) @ wildfly-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java-version) @ wildfly-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ wildfly-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ wildfly-parent ---
+[INFO] Executing: /bin/sh -c cd '/workspace/target-project' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /workspace/target-project
+[INFO] Storing buildNumber: b19048b72669fc0e96665b1b125dc1fda21f5993 at timestamp: 1754322787405
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/workspace/target-project' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /workspace/target-project
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:checkstyle (check-style) @ wildfly-parent ---
+[INFO] 
+[INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ wildfly-parent ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ wildfly-parent ---
+[INFO] Installing /workspace/target-project/pom.xml to /root/.m2/repository/org/wildfly/wildfly-parent/15.0.0.Alpha1-SNAPSHOT/wildfly-parent-15.0.0.Alpha1-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------------< org.wildfly:wildfly-naming >---------------------
+[INFO] Building WildFly: Naming Subsystem 15.0.0.Alpha1-SNAPSHOT          [2/2]
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl/2.12.0.SP02/xercesImpl-2.12.0.SP02.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.22.jbossorg-1/jcl-over-slf4j-1.7.22.jbossorg-1.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.22.jbossorg-1/slf4j-api-1.7.22.jbossorg-1.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for WildFly: Parent Aggregator 15.0.0.Alpha1-SNAPSHOT:
+[INFO] 
+[INFO] WildFly: Parent Aggregator ......................... SUCCESS [  1.240 s]
+[INFO] WildFly: Naming Subsystem .......................... FAILURE [  0.798 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.067 s
+[INFO] Finished at: 2025-08-04T15:53:08Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project wildfly-naming: Could not resolve dependencies for project org.wildfly:wildfly-naming:jar:15.0.0.Alpha1-SNAPSHOT: Failed to collect dependencies at org.wildfly.core:wildfly-subsystem-test:pom:7.0.0.Alpha1 -> org.wildfly.core:wildfly-subsystem-test-framework:jar:7.0.0.Alpha1 -> xerces:xercesImpl:jar:2.12.0.SP02: Failed to read artifact descriptor for xerces:xercesImpl:jar:2.12.0.SP02: Could not transfer artifact xerces:xercesImpl:pom:2.12.0.SP02 from/to maven-default-http-blocker (http://0.0.0.0/): Blocked mirror for repositories: [jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/, default, releases+snapshots)] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :wildfly-naming
+Failed with Java at /usr/lib/jvm/java-11-openjdk-amd64
+Trying Java version: openjdk version "17.0.15" 2025-04-15
+testing Step 1
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] WildFly: Parent Aggregator                                         [pom]
+[INFO] WildFly: Naming Subsystem                                          [jar]
+[INFO] 
+[INFO] ---------------------< org.wildfly:wildfly-parent >---------------------
+[INFO] Building WildFly: Parent Aggregator 15.0.0.Alpha1-SNAPSHOT         [1/2]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ wildfly-parent ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (ban-bad-dependencies) @ wildfly-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java-version) @ wildfly-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ wildfly-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ wildfly-parent ---
+[INFO] Executing: /bin/sh -c cd '/workspace/target-project' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /workspace/target-project
+[INFO] Storing buildNumber: b19048b72669fc0e96665b1b125dc1fda21f5993 at timestamp: 1754322791833
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/workspace/target-project' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /workspace/target-project
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:checkstyle (check-style) @ wildfly-parent ---
+[INFO] 
+[INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ wildfly-parent ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ wildfly-parent ---
+[INFO] Installing /workspace/target-project/pom.xml to /root/.m2/repository/org/wildfly/wildfly-parent/15.0.0.Alpha1-SNAPSHOT/wildfly-parent-15.0.0.Alpha1-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------------< org.wildfly:wildfly-naming >---------------------
+[INFO] Building WildFly: Naming Subsystem 15.0.0.Alpha1-SNAPSHOT          [2/2]
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl/2.12.0.SP02/xercesImpl-2.12.0.SP02.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.22.jbossorg-1/jcl-over-slf4j-1.7.22.jbossorg-1.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.22.jbossorg-1/slf4j-api-1.7.22.jbossorg-1.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for WildFly: Parent Aggregator 15.0.0.Alpha1-SNAPSHOT:
+[INFO] 
+[INFO] WildFly: Parent Aggregator ......................... SUCCESS [  1.283 s]
+[INFO] WildFly: Naming Subsystem .......................... FAILURE [  0.785 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.148 s
+[INFO] Finished at: 2025-08-04T15:53:13Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project wildfly-naming: Could not resolve dependencies for project org.wildfly:wildfly-naming:jar:15.0.0.Alpha1-SNAPSHOT: Failed to collect dependencies at org.wildfly.core:wildfly-subsystem-test:pom:7.0.0.Alpha1 -> org.wildfly.core:wildfly-subsystem-test-framework:jar:7.0.0.Alpha1 -> xerces:xercesImpl:jar:2.12.0.SP02: Failed to read artifact descriptor for xerces:xercesImpl:jar:2.12.0.SP02: Could not transfer artifact xerces:xercesImpl:pom:2.12.0.SP02 from/to maven-default-http-blocker (http://0.0.0.0/): Blocked mirror for repositories: [jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/, default, releases+snapshots)] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :wildfly-naming
+Failed with Java at /usr/lib/jvm/java-17-openjdk-amd64
+All Java versions failed

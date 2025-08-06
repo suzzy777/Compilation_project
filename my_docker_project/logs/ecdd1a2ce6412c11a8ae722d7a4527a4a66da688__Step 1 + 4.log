@@ -1,0 +1,139 @@
+===== Step 1 + 4 =====
+All applicable http:// URLs in pom.xml have been replaced with https://
+testing Step 1
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] tessera                                                            [pom]
+[INFO] eclipselink-utils                                                  [jar]
+[INFO] 
+[INFO] ----------------< net.consensys.quorum.tessera:tessera >----------------
+[INFO] Building tessera 20.10.1-SNAPSHOT                                  [1/2]
+[INFO] --------------------------------[ pom ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/junit/junit-dep/maven-metadata.xml
+Progress (1): 563 B                   Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit-dep/maven-metadata.xml (563 B at 1.8 kB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tessera ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-versions) @ tessera ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.5:prepare-agent (default) @ tessera ---
+[INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.8.5/org.jacoco.agent-0.8.5-runtime.jar=destfile=/workspace/target-project/target/jacoco.exec
+[INFO] 
+[INFO] --- googleformatter-maven-plugin:1.7.3:format (reformat-sources) @ tessera ---
+[INFO] Project packaging is POM, skipping...
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.1.1:check (verify-style) @ tessera ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.5:report (report) @ tessera ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.5:check (check) @ tessera ---
+[INFO] Skipping JaCoCo execution due to missing execution data file:/workspace/target-project/target/jacoco.exec
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.5:prepare-agent (pre-integration-test) @ tessera ---
+[INFO] failsafeArgLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.8.5/org.jacoco.agent-0.8.5-runtime.jar=destfile=/workspace/target-project/target/jacoco-it.exec
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.5:report (post-integration-test) @ tessera ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- editorconfig-maven-plugin:0.0.10:check (check) @ tessera ---
+Downloading from synergian-repo: https://raw.github.com/synergian/wagon-git/releases/org/eclipse/platform/org.eclipse.core.resources/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.resources/maven-metadata.xml
+Progress (1): 1.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.resources/maven-metadata.xml (1.3 kB at 58 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.expressions/maven-metadata.xml
+Downloading from synergian-repo: https://raw.github.com/synergian/wagon-git/releases/org/eclipse/platform/org.eclipse.core.expressions/maven-metadata.xml
+Progress (1): 980 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.expressions/maven-metadata.xml (980 B at 20 kB/s)
+Downloading from synergian-repo: https://raw.github.com/synergian/wagon-git/releases/org/eclipse/platform/org.eclipse.core.runtime/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.runtime/maven-metadata.xml
+Progress (1): 1.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.runtime/maven-metadata.xml (1.3 kB at 71 kB/s)
+Downloading from synergian-repo: https://raw.github.com/synergian/wagon-git/releases/org/eclipse/platform/org.eclipse.osgi/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.osgi/maven-metadata.xml
+Progress (1): 1.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.osgi/maven-metadata.xml (1.4 kB at 63 kB/s)
+Downloading from synergian-repo: https://raw.github.com/synergian/wagon-git/releases/org/eclipse/platform/org.eclipse.equinox.common/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.equinox.common/maven-metadata.xml
+Progress (1): 1.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.equinox.common/maven-metadata.xml (1.3 kB at 56 kB/s)
+Downloading from synergian-repo: https://raw.github.com/synergian/wagon-git/releases/org/eclipse/platform/org.eclipse.core.jobs/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.jobs/maven-metadata.xml
+Progress (1): 1.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.jobs/maven-metadata.xml (1.4 kB at 68 kB/s)
+Downloading from synergian-repo: https://raw.github.com/synergian/wagon-git/releases/org/eclipse/platform/org.eclipse.equinox.registry/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.equinox.registry/maven-metadata.xml
+Progress (1): 1.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.equinox.registry/maven-metadata.xml (1.2 kB at 58 kB/s)
+Downloading from synergian-repo: https://raw.github.com/synergian/wagon-git/releases/org/eclipse/platform/org.eclipse.equinox.preferences/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.equinox.preferences/maven-metadata.xml
+Progress (1): 1.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.equinox.preferences/maven-metadata.xml (1.1 kB at 54 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/osgi/org.osgi.service.prefs/maven-metadata.xml
+Downloading from synergian-repo: https://raw.github.com/synergian/wagon-git/releases/org/osgi/org.osgi.service.prefs/maven-metadata.xml
+Progress (1): 389 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/osgi/org.osgi.service.prefs/maven-metadata.xml (389 B at 20 kB/s)
+Downloading from synergian-repo: https://raw.github.com/synergian/wagon-git/releases/org/eclipse/platform/org.eclipse.core.contenttype/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.contenttype/maven-metadata.xml
+Progress (1): 1.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.contenttype/maven-metadata.xml (1.1 kB at 64 kB/s)
+Downloading from synergian-repo: https://raw.github.com/synergian/wagon-git/releases/org/eclipse/platform/org.eclipse.equinox.app/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.equinox.app/maven-metadata.xml
+Progress (1): 1.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.equinox.app/maven-metadata.xml (1.0 kB at 59 kB/s)
+Downloading from synergian-repo: https://raw.github.com/synergian/wagon-git/releases/org/eclipse/platform/org.eclipse.core.filesystem/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.filesystem/maven-metadata.xml
+Progress (1): 1.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.filesystem/maven-metadata.xml (1.1 kB at 49 kB/s)
+Downloading from synergian-repo: https://raw.github.com/synergian/wagon-git/releases/org/eclipse/platform/org.eclipse.text/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.text/maven-metadata.xml
+Progress (1): 1.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.text/maven-metadata.xml (1.1 kB at 55 kB/s)
+Downloading from synergian-repo: https://raw.github.com/synergian/wagon-git/releases/org/eclipse/platform/org.eclipse.core.commands/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.commands/maven-metadata.xml
+Progress (1): 1.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/platform/org.eclipse.core.commands/maven-metadata.xml (1.1 kB at 66 kB/s)
+[ERROR] No .editorconfig properties applicable for files under '/workspace/target-project'
+[INFO] Checked 0 files
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ tessera ---
+[INFO] Installing /workspace/target-project/pom.xml to /root/.m2/repository/net/consensys/quorum/tessera/tessera/20.10.1-SNAPSHOT/tessera-20.10.1-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------< net.consensys.quorum.tessera:eclipselink-utils >-----------
+[INFO] Building eclipselink-utils 20.10.1-SNAPSHOT                        [2/2]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ eclipselink-utils ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-versions) @ eclipselink-utils ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.5:prepare-agent (default) @ eclipselink-utils ---
+[INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.8.5/org.jacoco.agent-0.8.5-runtime.jar=destfile=/workspace/target-project/eclipselink-utils/target/jacoco.exec
+[INFO] 
+[INFO] --- googleformatter-maven-plugin:1.7.3:format (reformat-sources) @ eclipselink-utils ---
+[INFO] Found 1 uncompiled/modified files in /workspace/target-project/eclipselink-utils/src/main/java to reformat.
+[INFO] Found 2 uncompiled/modified files in /workspace/target-project/eclipselink-utils/src/test/java to reformat.
+[INFO] Executing: /bin/sh -c cd '/workspace/target-project' && 'git' 'rev-parse' '--show-prefix'
+[INFO] Working directory: /workspace/target-project
+[INFO] Executing: /bin/sh -c cd '/workspace/target-project' && 'git' 'status' '--porcelain' '.'
+[INFO] Working directory: /workspace/target-project
+[WARNING] Ignoring unrecognized line: ?? eclipselink-utils/pom.xml.bak
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ eclipselink-utils ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /workspace/target-project/eclipselink-utils/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ eclipselink-utils ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /workspace/target-project/eclipselink-utils/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for tessera 20.10.1-SNAPSHOT:
+[INFO] 
+[INFO] tessera ............................................ SUCCESS [  2.638 s]
+[INFO] eclipselink-utils .................................. FAILURE [  0.716 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.743 s
+[INFO] Finished at: 2025-08-04T13:22:15Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project eclipselink-utils: Fatal error compiling: invalid target release: 11 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :eclipselink-utils
