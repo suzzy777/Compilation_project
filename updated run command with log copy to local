@@ -1,0 +1,1 @@
+sudo docker run -v /home/srafi/Compilation_project/my_docker_project/new_logs:/root/logs --name <containername> <imagename> <gitURL> <SHA> <module_path>
