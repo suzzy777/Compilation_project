@@ -26,5 +26,4 @@ sed -i 's|http://|https://|g' "$POM_FILE"  # fallback, more aggressive (can be c
 
 echo "All applicable http:// URLs in $POM_FILE have been replaced with https://"
 
-
 exit 0

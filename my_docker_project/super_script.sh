@@ -17,19 +17,32 @@ git checkout "$COMMIT_SHA"
 
 SHA=$(git rev-parse HEAD)
 LOG_DIR="/root/logs"
+#LOG_DIR="/workspace/logs"
 mkdir -p "$LOG_DIR"
 
 
 
 cd "$MODULE_PATH" || exit 1
 
-check(){
-	if [ $1 -eq 0 ]; then
-		echo "success"
-		exit 0
-	fi
-}
+# check(){
+# 	if [ $1 -eq 0 ]; then
+# 		echo "success"
+# 		exit 0
+# 	fi
+# }
 
+check(){
+    if [ "$1" -eq 0 ]; then
+        echo "success"
+        exit 0  # STOP everything if any step succeeds
+    elif [ "$1" -eq 99 ]; then
+        echo "step failed, but continuing"
+        return 0  # continue to next steps
+    else
+        echo "critical failure"
+        exit "$1"
+    fi
+}
 log_output(){
 	steps_combo="$1"
 	shift
@@ -63,12 +76,12 @@ log_output "Step 1 + 4"	bash -c "/workspace/step_four.sh && /workspace/step_one.
 
 git reset --hard HEAD
 git clean -xfd 
-log_output "Step 1 + 2 + 3"	bash -c "/workspace/step_two.sh '$MODULE_PATH' && /workspace/step_three.sh"
+log_output "Step 1 + 2 + 3"	bash -c "/workspace/step_two.sh '$MODULE_PATH' || { /workspace/step_three.sh && /workspace/step_one.sh '$MODULE_PATH'; }"
 
 
 git reset --hard HEAD
 git clean -xfd 
-log_output "Step 1 + 2 + 4"	bash -c "/workspace/step_two.sh '$MODULE_PATH' && /workspace/step_four.sh"
+log_output "Step 1 + 2 + 4"	bash -c "/workspace/step_two.sh '$MODULE_PATH' || { /workspace/step_four.sh && /workspace/step_one.sh '$MODULE_PATH'; }"
 
 
 git reset --hard HEAD
@@ -77,4 +90,8 @@ log_output "Step 1 + 3 + 4"	bash -c "/workspace/step_three.sh && /workspace/step
 
 git reset --hard HEAD
 git clean -xfd 
-log_output "Step 1 + 2 + 3 + 4"	bash -c "/workspace/step_two.sh '$MODULE_PATH' && /workspace/step_three.sh && /workspace/step_four.sh"
+log_output "Step 1 + 2 +  3 + 4"	bash -c "/workspace/step_two.sh '$MODULE_PATH' || { /workspace/step_three.sh && /workspace/step_four.sh && /workspace/step_one.sh '$MODULE_PATH'; }"
+
+#cp -r $LOG_DIR/* $PWD/new_logs/
+#docker cp container1:/root/logs ./new_logs
+#sleep 300

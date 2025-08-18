@@ -9,7 +9,7 @@ if [ -z "$MODULE_PATH" ]; then
     exit 1
 fi
 
-cd /workspace/target-project || exit 1
+cd /workspace/target-project || exit 99
 
 echo "testing Step 1"
 
@@ -19,3 +19,10 @@ mvn clean install -pl "$MODULE_PATH" -am -U \
   -Denforcer.skip -Danimal.sniffer.skip -Dmaven.javadoc.skip -Dfindbugs.skip -Dwarbucks.skip \
   -Dmodernizer.skip -Dimpsort.skip -Dmdep.analyze.skip -Dpgpverify.skip -Dxml.skip \
   -Dcobertura.skip=true -Dfindbugs.skip=true
+
+
+status=$?
+if [ $status -ne 0 ]; then
+    echo "Maven build failed"
+    exit 99
+fi
